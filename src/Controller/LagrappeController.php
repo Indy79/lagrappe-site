@@ -5,6 +5,8 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
+
+
 class LagrappeController extends AbstractController
 {
     /**
@@ -12,12 +14,11 @@ class LagrappeController extends AbstractController
      */
     public function home()
     {
-       
         return $this->render('lagrappe/home.html.twig', [
-            
             'controller_name' => 'LagrappeController',
             'title_1' => 'Le premier site comparateur de vin !',
-            'title_2' => 'LA GRAPPE'
+            'title_2' => 'LA GRAPPE',
+            'products' => $product
         ]);
     }
 
